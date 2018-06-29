@@ -2,7 +2,7 @@
 
 Spring REST API with MySQL database connection JPA via.
 
-Este proyecto no tiene la estructura correcta completa debido a que subiré la asignación de DTO en el futuro.
+This project does not have the complete correct structure because I will upload the mapping to DTO in the future.
 
 Complete the properties file with your database credentials:
 
