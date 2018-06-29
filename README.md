@@ -1,6 +1,6 @@
 # Spring JPA Example
 
-Spring REST API with database connection JPA via.
+Spring REST API with MySQL database connection JPA via.
 
 Complete the properties file with your database credentials:
 
