@@ -23,4 +23,29 @@ public class UserServiceImpl implements UserService{
         return Lists.newArrayList(userDAO.findAll());
     }
 
+    @Override
+    public User getOne(Integer id) {
+        return userDAO.findById(id).orElseGet(User::new);
+    }
+
+    @Override
+    public User create(User user) {
+        return userDAO.save(user);
+    }
+
+    @Override
+    public void update(Integer id, User user) {
+        for(User u : getAll())
+            if(u.getId() == id) {
+                user.setId(id);
+                userDAO.save(user);
+                break;
+            }
+    }
+
+    @Override
+    public void delete(Integer id) {
+        userDAO.deleteById(id);
+    }
+
 }
